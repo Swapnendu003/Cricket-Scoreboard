@@ -8,13 +8,9 @@ void style()
     initscr();
     cbreak();
     noecho();
-
-  
     int height, width;
     getmaxyx(stdscr, height, width);
-
-   
-    int menuHeight = 10;
+    int menuHeight = 5;
     int menuWidth = 40;
     int menuStartY = (height - menuHeight) / 2;
     int menuStartX = (width - menuWidth) / 2;
@@ -26,7 +22,7 @@ void style()
     wrefresh(mainwin);
 
     start_color();
-    init_pair(1, COLOR_WHITE, COLOR_BLUE);
+    init_pair(1, COLOR_WHITE, COLOR_YELLOW);
     wbkgd(mainwin, COLOR_PAIR(1) | A_BOLD);
 
 
